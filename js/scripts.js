@@ -210,3 +210,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  if (!validateForm()) {
+    event.preventDefault();
+  }
+});
+
+document.getElementById("contactForm").addEventListener("keydown", function(event) {
+  if (event.key === "Enter" && event.target.tagName !== "TEXTAREA") {
+    event.preventDefault();
+  }
+});
