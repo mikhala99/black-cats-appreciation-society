@@ -11075,7 +11075,7 @@ html {
 }
  .masthead-avatar {
   width: 25rem;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15); /* soft glow */
+  box-shadow: 0 0 20px rgba(173, 216, 230, 0.3); /* icy blue glow */
   border-radius: 0.5rem; /* optional, for rounded edges */
 }
 @media (min-width: 992px) {
