@@ -11045,8 +11045,10 @@ html {
   color: #6c757d;
 }
 .masthead {
-  background: url("backgrounds/blksatin.jpg") center center / cover no-repeat, #9900ff;
-  background-color: black; /* fallback just in case */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("backgrounds/blksatin.jpg") center center / cover no-repeat;
+  background-color: black;
   color: white;
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
