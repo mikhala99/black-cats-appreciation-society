@@ -221,10 +221,4 @@ document.getElementById("contactForm").addEventListener("keydown", function(even
     event.preventDefault();
   }
 });
-form.addEventListener("submit", function(event) {
-  if (!form.checkValidity()) {
-    event.preventDefault();
-    alert("🛑 Dresden says: All fields must be completed before submitting!");
-    return false;
-  }
-});
+
