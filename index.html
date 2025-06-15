@@ -267,25 +267,24 @@
             <!-- Contact Section Form-->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
-                   <form id="contactForm" action="https://formspree.io/f/mwpbbneo" method="POST">
-                        <!-- Radio buttons: User chooses type of submission for the BCAS gallery -->
-                        <div class="mb-4">
-                            <h5>Tell Us How Your Black Cat Shines!</h5>
-                            <p>Please choose what you'd like to submit to the Black Cats Appreciation Society. We can't wait to see or hear about your floofy friend!<p>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="submissionType" id="photoOnly" value="photo" />
-                                    <label class="form-check-label" for="photoOnly">A photo of my black cat</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="submissionType" id="storyOnly" value="story">
-                                    <label class="form-check-label" for="s" toryOnly">A story or memory</label>
-                                </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="radio" name="submissionType" id="both" value="both">
-                                    <label class="form-check-label" for="both">Both a photo and a story</label>
-                                </div>
-                            </p>
-                        </div>
+        <form id="contactForm" method="POST" action="https://formspree.io/f/mwpbbneo" onsubmit="return handleFormSubmit(event)">
+            <!-- Radio buttons: User chooses type of submission for the BCAS gallery -->
+            <div class="mb-4">
+                <h5>Tell Us How Your Black Cat Shines!</h5>
+                <p>Please choose what you'd like to submit to the Black Cats Appreciation Society. We can't wait to see or hear about your floofy friend!</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="submissionType" id="photoOnly" value="photo" required>
+                  <label class="form-check-label" for="photoOnly">A photo of my black cat</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="submissionType" id="storyOnly" value="story">
+                  <label class="form-check-label" for="storyOnly">A story or memory</label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="radio" name="submissionType" id="both" value="both">
+                  <label class="form-check-label" for="both">Both a photo and a story</label>
+                </div>
+              </div>
                         <!-- Checkboxes: User consent and community options -->
                         <div class="mb-4">
                             <h5>Before You Submit</h5>
@@ -390,32 +389,17 @@
                                 <label for="message">Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                        <!-- Submit Button-->
-                        <button type="submit" class="submit-button" aria-label="Submit message">
-                             <img src="assets/envelope.png" alt="Submit" style="width: 64px; height: auto;"> 
-                        </button>
-                    </form>
-                </div>
-            </div>
+                            <!-- Custom messages -->
+                            <div id="customSuccessMessage" class="text-success d-none" style="margin-top: 1rem;">🎉 Submission received! Dresden purrs his approval. 🐾</div>
+                            <div id="customErrorMessage" class="text-danger d-none" style="margin-top: 1rem;">😿 Oops! Something went wrong. Please try again later or bribe Dresden with catnip.</div>
+
+                            <button type="submit" class="submit-button" aria-label="Submit message">
+                                <img src="assets/envelope.png" alt="Submit" style="width: 64px; height: auto;">
+                            </button>
+         </form>
         </div>
+      </div>
+    </div>
     </section>
     <!-- Portfolio Modals-->
     <!-- Portfolio Modal 1-->
