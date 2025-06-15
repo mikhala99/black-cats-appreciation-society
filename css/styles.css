@@ -11073,10 +11073,12 @@ html {
   margin-top: 1rem;
   text-align: center;
 }
-    .masthead .masthead-avatar {
-    width: 25rem; /* changed from 15rem to 25rem on 4/21/25 */
-    }
-
+ .masthead-avatar {
+   width: 25rem;
+   box-shadow:
+     0 0 20px rgba(255, 255, 255, 0.15), /* glow */
+     0 10px 30px rgba(0, 0, 0, 0.5);     /* shadow */
+}
 @media (min-width: 992px) {
   .masthead {
     padding-top: calc(6rem + 104px);
