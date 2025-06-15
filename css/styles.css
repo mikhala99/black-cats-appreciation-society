@@ -11047,7 +11047,7 @@ html {
 .masthead {
   background:
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("assets/img/blksatin.jpeg") center/cover no-repeat;
+    url("assets/blksatin.jpg") center/cover no-repeat;
   color: #000;
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
