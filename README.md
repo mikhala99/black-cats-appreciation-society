@@ -9,7 +9,7 @@ paw swipe from Dresden and Pandora - my 2024 Christmas Present Adoptions.
 
 ## 🌐 Live Site
 
-[Click here to visit the live site](https://mikhala.github.io/black-cats-appreciation-society/)
+[Click here to visit the live site](https://mikhala99.github.io/black-cats-appreciation-society/)
 
 ---
 
