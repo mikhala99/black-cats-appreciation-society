@@ -14,16 +14,6 @@ paw swipe from Dresden and Pandora - my 2024 Christmas Present Adoptions.
 ---
 
 ## 📁 Project Structure
-BCAS/
-├── index.html
-├── css/
-│ └── style.css
-├── js/
-│ └── script.js
-├── assets/
-│ ├── images/
-│ └── icons/
-
 - `index.html`: The main HTML page
 - `css/style.css`: Custom site styling
 - `js/script.js`: JavaScript functionality and validation
@@ -54,7 +44,7 @@ BCAS/
 ## 🐾 Contributors
 
 - **Mikhala** (a.k.a. Michele) — Designer, Developer, and Cat Mom Supreme
-- *Aether* friendly AI collaborator
+- *Aether* - friendly AI collaborator
 
 ---
 
