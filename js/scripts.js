@@ -163,3 +163,50 @@ window.addEventListener('DOMContentLoaded', event => {
                     });
                 }
             });
+// Custom Submit and Error Messages for Formspree
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+    const successMessage = document.getElementById("submitSuccessMessage");
+    const errorMessage = document.getElementById("submitErrorMessage");
+
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            if (!validateForm()) {
+                event.preventDefault(); // Don't submit if validation fails
+                return;
+            }
+
+            event.preventDefault(); // We'll handle the submission manually
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    Accept: "application/json"
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        form.reset();
+                        if (successMessage) {
+                            successMessage.classList.remove("d-none");
+                            errorMessage.classList.add("d-none");
+                        }
+                        alert("Dresden thanks you for your submission! We'll be in touch.");
+                    } else {
+                        return response.json().then(data => {
+                            throw new Error(data.message || "Form submission error");
+                        });
+                    }
+                })
+                .catch(error => {
+                    if (errorMessage) {
+                        errorMessage.classList.remove("d-none");
+                        successMessage.classList.add("d-none");
+                    }
+                    alert("Yowch! Something went wrong with the submission. Try again later.");
+                });
+        });
+    }
+});
