@@ -11044,7 +11044,6 @@ html {
   font-size: 1.5rem;
   color: #6c757d;
 }
-
 .masthead {
   background:
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
@@ -11058,7 +11057,7 @@ html {
   line-height: 2.75rem;
 }
 .masthead .masthead-subheading {
-  /*color: #cce4ff;           Soft enchanted blue */
+  color: #cce4ff;           /* Soft enchanted blue */
   font-size: 1.5rem;       /* Slightly larger for readability */
   background-color: transparent; /* Inherits from masthead */
   padding: 1rem;
