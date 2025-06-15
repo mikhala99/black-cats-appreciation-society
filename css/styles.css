@@ -11074,10 +11074,9 @@ html {
   text-align: center;
 }
  .masthead-avatar {
-   width: 25rem;
-   box-shadow:
-     0 0 20px rgba(255, 255, 255, 0.15), /* glow */
-     0 10px 30px rgba(0, 0, 0, 0.5);     /* shadow */
+  width: 25rem;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15); /* soft glow */
+  border-radius: 0.5rem; /* optional, for rounded edges */
 }
 @media (min-width: 992px) {
   .masthead {
