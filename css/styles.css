@@ -79,10 +79,87 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+.paw-hover::after {
+    content: "";
+    display: inline-block;
+    transition: content 0.3s ease;
+    margin-left: 8px;
+}
+
+.paw-hover:hover::after {
+    content: "🐾";
+}
+
+#findablackcat {
+    background-color: #003366;
+    padding: 2rem;
+    color: white;
+}
+
+.link-container {
+    text-align: center;
+}
+
+    .link-container ul {
+        display: inline-block;
+        text-align: left;
+        padding: 0;
+        list-style-position: inside;
+    }
+
+.highlighted {
+    color: white;
+    font-size: 1.3em;
+}
+
+.link-container li {
+    margin-bottom: 1.5rem;
+}
+
+.link-container p em {
+    display: block;
+    font-size: 0.95em;
+    color: #ddd;
+    margin-top: 0.25rem;
+}
+
+.link-container a {
+    text-decoration: none;
+    color: #80d8ff;
+}
+
+    .link-container a:hover {
+        text-decoration: underline;
+    }
+
+<button:hover {
+    background-color: #333;
+    color: #f0c674;
+    border-color: #666;
+}
+
+
+button.submit_button {
+    background-color: #1a1a1a;
+    color: #f8f8f2;
+    border: 2px solid #444;
+    padding: 10px 20px;
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.submit_button:hover {
+    background-color: #218838;
+    border-color: #1e7e34 transform: scale(1.03);
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -10850,6 +10927,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  marigin-bottom: 3rem;
 }
 .divider-custom .divider-custom-line {
   width: 100%;
@@ -10996,42 +11074,48 @@ html {
     }
 }
 .portfolio .portfolio-item {
-  cursor: pointer;
-  position: relative;
-  display: block;
-  max-width: 25rem;
-  border-radius: 0.5rem;
-  overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.portfolio .portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: rgba(26, 188, 156, 0.9);
 }
-.portfolio .portfolio-item .portfolio-item-caption:hover {
-  opacity: 1;
-}
-.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
-  font-size: 1.5rem;
-}
+    .portfolio .portfolio-item .portfolio-item-caption:hover {
+        opacity: 1;
+    }
+    .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+        font-size: 1.5rem;
+    }
 
 .portfolio-modal .btn-close {
-  color: #1abc9c;
-  font-size: 2rem;
-  padding: 1rem;
+    color: #1abc9c;
+    font-size: 2rem;
+    padding: 1rem;
 }
 .portfolio-modal .portfolio-modal-title {
-  font-size: 2.25rem;
-  line-height: 2rem;
+    font-size: 2.25rem;
+    line-height: 2rem;
 }
 @media (min-width: 992px) {
-  .portfolio-modal .portfolio-modal-title {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
+    .portfolio-modal .portfolio-modal-title {
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
 }
 
 .footer {
