@@ -11047,7 +11047,7 @@ html {
 
 .masthead {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url("assets/img/blksatin.jpg") center/cover no-repeat;
   color: #fff;
   padding-top: calc(6rem + 74px);
@@ -11059,6 +11059,14 @@ html {
 }
 .masthead .masthead-subheading {
   /*color: #cce4ff;           Soft enchanted blue */
+  font-size: 1.5rem;       /* Slightly larger for readability */
+  background-color: transparent; /* Inherits from masthead */
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.masthead .site-purpose {
+  /* color: #cce4ff;          Soft enchanted blue */
   font-size: 1.5rem;       /* Slightly larger for readability */
   background-color: transparent; /* Inherits from masthead */
   padding: 1rem;
