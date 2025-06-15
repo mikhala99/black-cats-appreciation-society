@@ -11045,7 +11045,7 @@ html {
   color: #6c757d;
 }
 .masthead {
-  background: url("backgrounds/blksatin.jpg") center center / cover no-repeat;
+  background: url("backgrounds/blksatin.jpg") center center / cover no-repeat, #9900ff;
   background-color: black; /* fallback just in case */
   color: white;
   padding-top: calc(6rem + 74px);
