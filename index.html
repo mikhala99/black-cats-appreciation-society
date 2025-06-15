@@ -252,155 +252,169 @@
                 </p>
             </div>
         </div>
-    </section>
-    <!-- Contact Section-->
-    <section class="page-section" id="contact">
-        <div class="container">
-            <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Contact Section Form-->
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-xl-7">
-        <form id="contactForm" method="POST" action="https://formspree.io/f/mwpbbneo" onsubmit="return handleFormSubmit(event)">
-            <!-- Radio buttons: User chooses type of submission for the BCAS gallery -->
-            <div class="mb-4">
-                <h5>Tell Us How Your Black Cat Shines!</h5>
-                <p>Please choose what you'd like to submit to the Black Cats Appreciation Society. We can't wait to see or hear about your floofy friend!</p>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="submissionType" id="photoOnly" value="photo" required>
-                  <label class="form-check-label" for="photoOnly">A photo of my black cat</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="submissionType" id="storyOnly" value="story">
-                  <label class="form-check-label" for="storyOnly">A story or memory</label>
-                </div>
-                <div class="form-check mb-3">
-                  <input class="form-check-input" type="radio" name="submissionType" id="both" value="both">
-                  <label class="form-check-label" for="both">Both a photo and a story</label>
-                </div>
-              </div>
-                        <!-- Checkboxes: User consent and community options -->
-                        <div class="mb-4">
-                            <h5>Before You Submit</h5>
-                            <p>Just a few things to check off:</p>
-                            <!-- Consent to publish -->
-                            <div class="form-chec" k">
-                                <input class="form-check-input" type="checkbox" id="consent" name="consent" value="yes" />
-                                <label class="form-check-label" for="consent">
+    </section><!-- Contact Section-->
+<section class="page-section" id="contact">
+<div class="container">
+<!-- Contact Section Heading-->
+<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+<!-- Icon Divider-->
+<div class="divider-custom">
+<div class="divider-custom-line"></div>
+<div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+<div class="divider-custom-line"></div>
+</div>
+<!-- Contact Section Form-->
+<div class="row justify-content-center">
+<div class="col-lg-8 col-xl-7">
+<form action="https://formspree.io/f/mwpbbneo" id="contactForm" method="POST">
+<!-- Radio buttons: User chooses type of submission for the BCAS gallery -->
+<div class="mb-4">
+<h5>Tell Us How Your Black Cat Shines!</h5>
+<p>Please choose what you'd like to submit to the Black Cats Appreciation Society. We can't wait to see or hear about your floofy friend!<p>
+<div class="form-check">
+<input class="form-check-input" id="photoOnly" name="submissionType" type="radio" value="photo"/>
+<label class="form-check-label" for="photoOnly">A photo of my black cat</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" id="storyOnly" name="submissionType" type="radio" value="story"/>
+<label class="form-check-label" for="s" toryonly"="">A story or memory</label>
+</div>
+<div class="form-check mb-3">
+<input class="form-check-input" id="both" name="submissionType" type="radio" value="both"/>
+<label class="form-check-label" for="both">Both a photo and a story</label>
+</div>
+</p>
+</p></div>
+<!-- Checkboxes: User consent and community options -->
+<div class="mb-4">
+<h5>Before You Submit</h5>
+<p>Just a few things to check off:</p>
+<!-- Consent to publish -->
+<div class="form-chec" k"="">
+<input class="form-check-input" id="consent" name="consent" type="checkbox" value="yes"/>
+<label class="form-check-label" for="consent">
                                     I give permission for my submission to appear in the BCAS Gallery.
                                 </label>
-                            </div>
-                            <!-- Newsletter opt-in -->
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter" value="yes" />
-                                <label class="form-check-label" for="newsletter">
+</div>
+<!-- Newsletter opt-in -->
+<div class="form-check">
+<input class="form-check-input" id="newsletter" name="newsletter" type="checkbox" value="yes"/>
+<label class="form-check-label" for="newsletter">
                                     Sign me up for BCAS updates and black cat news!
                                 </label>
-                            </div>
-                            <!-- Dresden checkbox with inline explanation + tooltip -->
-                            <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox" id="dresden" name="dresden" value="yes">
-                                <p>
-                                    <label class="form-check-label" for="dresden">
+</div>
+<!-- Dresden checkbox with inline explanation + tooltip -->
+<div class="form-check mb-3">
+<input class="form-check-input" id="dresden" name="dresden" type="checkbox" value="yes"/>
+<p>
+<label class="form-check-label" for="dresden">
                                         I acknowledge that Dresden (my black cat) rules this domain and I shall not question his judgment.
                                     </label>
-                                    <small class="form-text text-muted">
+<small class="form-text text-muted">
                                         (Dresden is the official site mascot, keyboard tyrant, and household chaos coordinator.)
                                     </small>
-                                </p>
-                            </div>
-                            <!-- Dropdown menu: User selects their black cat's fur pattern -->
-                            <div class="mb-4">
-                                <h5>What Type of Black Cat Magic Are You Submitting?</h5>
-                                <p>
+</p>
+</div>
+<!-- Dropdown menu: User selects their black cat's fur pattern -->
+<div class="mb-4">
+<h5>What Type of Black Cat Magic Are You Submitting?</h5>
+<p>
                                     Select your cats fur pattern below. We know they're all stunning, but this helps us tag submissions!
 
-                                    <select class="form-select" name="catpattern" id="catpattern">
-                                        <option selected disabled value="">Please choose one...</option>
-                                        <option value="solid">Solid Black (a.k.a. "Void")</option>
-                                        <option value="black_smoke">Black Smoke</option>
-                                        <option value="black_tabby">Black Tabby</option>
-                                        <option value="Tuxedo">Tuxedo (black with white formal-wear flair)</option>
-                                        <option value="long_fur">Long-Haired Black Beauty</option>
-                                        <option value="other">Other (or mysterious blend)</option>
-                                    </select>
-
-                                    <div class="mt-3" id="catOtherPatternDiv" style="display: none;">
-                                        <label for="catOtherPattern">Tell us more about your cat's unique floof:</label>
-                                        <input type="text" id="catOtherPattern" name="catOtherPattern" class="form-control" placeholder="Describe your cat's mysterious pattern..." />
-                                    </div>
-                                </p>
-                            </div>
-                            <!-- Preferred Contact Method -->
-                            <div style="margin-bottom: 1.5em;">
-                                <div style="margin-bottom: 0.5em;"><strong>Preferred Contact Method:</strong></div>
-                                <label><input type="radio" name="contactReason" value="Email" onchange="getRadioValue()"> Email</label><br>
-                                <label><input type="radio" name="contactReason" value="Phone" onchange="getRadioValue()"> Phone</label><br>
-                                <label><input type="radio" name="contactReason" value="Text" onchange="getRadioValue()"> Text</label>
-                            </div>
-                            <!-- What would you like to receive? -->
-                            <div style="margin-bottom: 2em;">
-                                <div style="margin-bottom: 0.5em;"><strong>What would you like to receive?</strong></div>
-                                <label><input type="checkbox" name="updates" value="Newsletter" onclick="getCheckboxClick(this)"> Newsletter</label><br>
-                                <label><input type="checkbox" name="updates" value="Event Invites" onclick="getCheckboxClick(this)"> Event Invites</label>
-                            </div>
-                            <!-- Reason for Contact -->
-                            <div style="margin-bottom: 1.5em;">
-                                <label for="pattern"><strong>Reason for Contact:</strong></label>
-                                <select name="contactReason" id="pattern" onchange="getMenuSelection(this)">
-                                    <option value="">Select a reason</option>
-                                    <option value="Support">Support</option>
-                                    <option value="Feedback">Feedback</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
-                            <div id="otherPatternDiv" style="display: none; margin-top: 10px;">
-                                <label for="otherPattern">Please specify:</label>
-                                <input type="text" id="otherPattern" onkeyup="getTextboxEntry(this)" />
-                            </div>
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Custom messages -->
-                            <div id="customSuccessMessage" class="text-success d-none" style="margin-top: 1rem;">🎉 Submission received! Dresden purrs his approval. 🐾</div>
-                            <div id="customErrorMessage" class="text-danger d-none" style="margin-top: 1rem;">😿 Oops! Something went wrong. Please try again later or bribe Dresden with catnip.</div>
-
-                            <button type="submit" class="submit-button" aria-label="Submit message">
-                                <img src="assets/envelope.png" alt="Submit" style="width: 64px; height: auto;">
-                            </button>
-         </form>
-        </div>
-      </div>
+                                    <select class="form-select" id="catpattern" name="catpattern">
+<option disabled="" selected="" value="">Please choose one...</option>
+<option value="solid">Solid Black (a.k.a. "Void")</option>
+<option value="black_smoke">Black Smoke</option>
+<option value="black_tabby">Black Tabby</option>
+<option value="Tuxedo">Tuxedo (black with white formal-wear flair)</option>
+<option value="long_fur">Long-Haired Black Beauty</option>
+<option value="other">Other (or mysterious blend)</option>
+</select>
+<div class="mt-3" id="catOtherPatternDiv" style="display: none;">
+<label for="catOtherPattern">Tell us more about your cat's unique floof:</label>
+<input class="form-control" id="catOtherPattern" name="catOtherPattern" placeholder="Describe your cat's mysterious pattern..." type="text"/>
+</div>
+</p>
+</div>
+<!-- Preferred Contact Method -->
+<div style="margin-bottom: 1.5em;">
+<div style="margin-bottom: 0.5em;"><strong>Preferred Contact Method:</strong></div>
+<label><input name="contactReason" onchange="getRadioValue()" type="radio" value="Email"/> Email</label><br/>
+<label><input name="contactReason" onchange="getRadioValue()" type="radio" value="Phone"/> Phone</label><br/>
+<label><input name="contactReason" onchange="getRadioValue()" type="radio" value="Text"/> Text</label>
+</div>
+<!-- What would you like to receive? -->
+<div style="margin-bottom: 2em;">
+<div style="margin-bottom: 0.5em;"><strong>What would you like to receive?</strong></div>
+<label><input name="updates" onclick="getCheckboxClick(this)" type="checkbox" value="Newsletter"/> Newsletter</label><br/>
+<label><input name="updates" onclick="getCheckboxClick(this)" type="checkbox" value="Event Invites"/> Event Invites</label>
+</div>
+<!-- Reason for Contact -->
+<div style="margin-bottom: 1.5em;">
+<label for="pattern"><strong>Reason for Contact:</strong></label>
+<select id="pattern" name="contactReason" onchange="getMenuSelection(this)">
+<option value="">Select a reason</option>
+<option value="Support">Support</option>
+<option value="Feedback">Feedback</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<div id="otherPatternDiv" style="display: none; margin-top: 10px;">
+<label for="otherPattern">Please specify:</label>
+<input id="otherPattern" onkeyup="getTextboxEntry(this)" type="text"/>
+</div>
+<!-- Name input-->
+<div class="form-floating mb-3">
+<input class="form-control" data-sb-validations="required" id="name" name="name" placeholder="Enter your name..." required="" type="text"/>
+<label for="name">Full name</label>
+<div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+</div>
+<!-- Email address input-->
+<div class="form-floating mb-3">
+<input class="form-control" data-sb-validations="required,email" id="email" name="email" placeholder="name@example.com" required="" type="email"/>
+<label for="email">Email address</label>
+<div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+<div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+</div>
+<!-- Phone number input-->
+<div class="form-floating mb-3">
+<input class="form-control" data-sb-validations="required" id="phone" name="phone" placeholder="(123) 456-7890" required="" type="tel"/>
+<label for="phone">Phone number</label>
+<div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+</div>
+<!-- Message input-->
+<div class="form-floating mb-3">
+<textarea class="form-control" data-sb-validations="required" id="message" name="message" placeholder="Enter your message here..." required="" style="height: 10rem" type="text"></textarea>
+<label for="message">Message</label>
+<div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+</div>
+<!-- Submit success message-->
+<!-- -->
+<!-- This is what your users will see when the form-->
+<!-- has successfully submitted-->
+<div class="d-none" id="submitSuccessMessage">
+<div class="text-center mb-3">
+<div class="fw-bolder">Thank you for submitting to the Black Cats Appreciation Society!</div>
+        Your form has been received. Please check your inbox for a confirmation meow.
+        <br/>
+        🐾 Stay magical and give your floof a boop from us!
     </div>
-    </section>
+</div>
+</div>
+<!-- Submit error message-->
+<!-- -->
+<!-- This is what your users will see when there is-->
+<!-- an error submitting the form-->
+<div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+<!-- Submit Button-->
+<button aria-label="Submit message" class="submit-button" type="submit">
+<img alt="Submit" src="assets/envelope.png" style="width: 64px; height: auto;"/>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
     <!-- Portfolio Modals-->
     <!-- Portfolio Modal 1-->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
